@@ -27,7 +27,7 @@ p {
 
 .left-nav {
     min-height: calc(100vh - 50px);
-    width: 100px;
+    width: 110px;
     background: #42275a;
     background: -webkit-linear-gradient(to right, #42275a, #734b6d);
     background: linear-gradient(to right, #42275a, #734b6d);
@@ -61,7 +61,7 @@ p {
 }
 
 .prod-img {
-    height: 150px;
+    height: 140px;
 
     img {
         border-radius: 25px;
@@ -69,13 +69,7 @@ p {
 }
 
 .card {
-    &:not(:first-child) {
-        margin: 10px;
-    }
-
-    &:first-child {
-        margin: 10px 10px 10px 0px;
-    }
+    margin: 10px 10px 10px 0px;
 
     &:hover {
         box-shadow: 4px 8px 8px silver;
@@ -163,10 +157,10 @@ p {
 
 .leftnav-item {
     padding: 16px;
-    text-align: center;
     cursor: pointer;
 
-    &:hover,&.active {
+    &:hover,
+    &.active {
         background-color: white;
 
         p {
@@ -183,11 +177,28 @@ p {
     cursor: pointer;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: lightcoral;
     border-color: transparent;
-    &:hover{
+    margin-top: 25px;
+
+    &:hover {
         background-color: lightcoral;
         border-color: transparent;
     }
+}
+
+.btn-aqua {
+    margin-top: 10px;
+    background-color: #ff5590;
+    border-color: #ff5590;
+
+    &:hover {
+        background-color: #ff5590;
+        border-color: #ff5590;
+    }
+}
+
+.icon-white {
+    color: white;
 }

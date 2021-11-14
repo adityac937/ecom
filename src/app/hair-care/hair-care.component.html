@@ -1,15 +1,15 @@
 <div class="page-container">
     <h4>Browse Brushes</h4>
-    <div class="d-flex">
-        <div class="card w-200 prods" *ngFor="let brush of brushes">
+    <div class="d-flex flex-wrap">
+        <div class="card w-200 prods" *ngFor="let hair of hairs">
             <div class="card-body d-flex flex-column justify-content-center align-items-center">
                 <div class="prod-img">
-                    <img src={{brush.img}} width="150" height="150">
+                    <img src={{hair.img}} width="150" height="150">
                 </div>
-                <p class="mt-8 text-secondary text-center">{{brush.name}}</p>
+                <p class="mt-8 text-secondary text-center">{{hair.name}}</p>
                 <div class="d-flex align-items-center">
-                    <p>Rs. {{brush.price}}</p>
-                    <p class="ml-8 border-left pl-8">{{brush.off}} % Off</p>
+                    <p>Rs. {{hair.price}}</p>
+                    <p class="ml-8 border-left pl-8">{{hair.off}} % Off</p>
                 </div> <button class="btn btn-aqua">
                     <span class="icon ic-add icon-white"></span>
                     <span class="ml-8">Add To Cart</span></button>
