@@ -1,0 +1,17 @@
+<div class="page-container">
+    <h4>Browse Brushes</h4>
+<div class="d-flex">
+    <div class="card w-200 prods" *ngFor="let brush of brushes">
+        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+            <div class="prod-img">
+                <img src={{brush.img}} width="150" height="150">
+            </div>
+            <p class="mt-8 text-secondary text-center">{{brush.name}}</p>
+            <div class="d-flex align-items-center">
+                <p>Rs. {{brush.price}}</p>
+                <p class="ml-8 border-left pl-8">{{brush.off}} % Off</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

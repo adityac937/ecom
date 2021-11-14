@@ -1,0 +1,13 @@
+<div class="page-container">
+    <h4>Browse Lipsticks</h4>
+<div class="d-flex">
+    <div class="card w-200 prods" *ngFor="let lipstick of lipsticks">
+        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+            <div class="prod-img">
+                <img src={{lipstick.img}} width="150" height="150">
+            </div>
+            <p class="mt-8">{{lipstick.name}}</p>
+        </div>
+    </div>
+</div>
+</div>

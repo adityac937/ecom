@@ -1,1 +1,193 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("./assets/images/nothing-to-see.svg");
+    background-repeat: no-repeat;
+    background-position: calc(100vw - 500px);
+}
+
+p {
+    margin: 0;
+}
+
+.header {
+    background: #A770EF;
+    background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);
+    background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);
+    height: 50px;
+    width: 100vw;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.left-nav {
+    min-height: calc(100vh - 50px);
+    width: 100px;
+    background: #42275a;
+    background: -webkit-linear-gradient(to right, #42275a, #734b6d);
+    background: linear-gradient(to right, #42275a, #734b6d);
+
+}
+
+.carousel {
+    width: 900px;
+    height: 700px;
+
+    .carousel-inner {
+        height: 100%;
+        width: 100%;
+
+        .carousel-item {
+            height: 100%;
+            width: 100%;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.fit-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prod-img {
+    height: 150px;
+
+    img {
+        border-radius: 25px;
+    }
+}
+
+.card {
+    &:not(:first-child) {
+        margin: 10px;
+    }
+
+    &:first-child {
+        margin: 10px 10px 10px 0px;
+    }
+
+    &:hover {
+        box-shadow: 4px 8px 8px silver;
+    }
+}
+
+.w-200 {
+    width: 200px;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.page-container {
+    padding: 16px;
+}
+
+.text-secondary {
+    color: gray;
+}
+
+.ml-8 {
+    margin-left: 8px;
+}
+
+.ml-16 {
+    margin-left: 16px;
+}
+
+.mr-16 {
+    margin-right: 16px;
+}
+
+.border-left {
+    border-left: 1px solid gray;
+}
+
+.pl-8 {
+    padding-left: 8px;
+}
+
+.mx-20 {
+    margin: 0px 20px;
+}
+
+.header-input {
+    position: relative;
+    max-width: 400px;
+    width: 400px;
+
+    .input-field {
+        border: 2px solid lightblue;
+        box-sizing: border-box;
+        outline: none;
+        padding: 5px;
+        border-radius: 25px;
+        background-color: inherit;
+        text-indent: 12px;
+        color: white;
+
+        &::placeholder {
+            font-size: 14px;
+        }
+    }
+
+    .ic-search {
+        position: absolute;
+        right: 13px;
+        top: 11px;
+        z-index: 2;
+        color: white;
+    }
+}
+
+.ic-white {
+    color: white;
+}
+
+.icon-28 {
+    height: 28px;
+    width: 28px;
+    font-size: 20px;
+}
+
+.leftnav-item {
+    padding: 16px;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover,&.active {
+        background-color: white;
+
+        p {
+            color: black;
+        }
+    }
+
+    p {
+        color: white;
+    }
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.btn-primary{
+    background-color: lightcoral;
+    border-color: transparent;
+    &:hover{
+        background-color: lightcoral;
+        border-color: transparent;
+    }
+}
