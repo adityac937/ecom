@@ -161,10 +161,10 @@ p {
 
     &:hover,
     &.active {
-        background-color: white;
+        background-color: #52195e;
 
         p {
-            color: black;
+            color: white;
         }
     }
 
@@ -201,4 +201,8 @@ p {
 
 .icon-white {
     color: white;
+}
+
+.border-left{
+    color: hotpink;
 }
